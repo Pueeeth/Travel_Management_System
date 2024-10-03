@@ -13,7 +13,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import net.proteanit.sql.DbUtils;
+//import net.proteanit.sql.DbUtils;
 
 import javax.swing.JTable;
 import java.sql.*;	
@@ -80,7 +80,7 @@ public class ViewCustomers extends JFrame {
                     Conn c = new Conn();
                         String displayCustomersql = "select * from customer";
                         ResultSet rs = c.s.executeQuery(displayCustomersql);
-                        table.setModel(DbUtils.resultSetToTableModel(rs));
+//                        table.setModel(DbUtils.resultSetToTableModel(rs));
                 }
                 catch(Exception e1){
                         e1.printStackTrace();
